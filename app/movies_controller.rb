@@ -23,9 +23,9 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(args = __)
-  Movie.create do |m|
-    m.
-  end
+  #Movie.create do |m|
+  #  m.
+  #end
 end
 
 def can_get_the_first_item_in_the_database
