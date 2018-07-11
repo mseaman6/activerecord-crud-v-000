@@ -22,7 +22,13 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args = __)
+def can_be_created_in_a_block(args = {
+    title: "The Sting",
+    release_date: 1973,
+    director: "George Roy Hill",
+    lead: "Paul Newman",
+    in_theaters: false
+})
   Movie.create(args)
 end
 
